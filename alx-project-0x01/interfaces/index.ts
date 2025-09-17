@@ -22,7 +22,17 @@ export interface Company {
   catchPhrase: string;
   bs: string;
 }
+export interface PostData {
+  userId: number;
+  id?: number; // optional for new posts
+  title: string;
+  body: string;
+}
 
+export interface PostModalProps {
+  onClose: () => void;
+  onSubmit: (post: PostData) => void;
+}
 export interface UserProps {
   id: number;
   name: string;
