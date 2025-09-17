@@ -1,20 +1,44 @@
-import Button from "../components/common/Button";
-import PostCard from "../components/common/PostCard";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
+// import Button from "../components/common/Button";
+// import PostCard from "../components/common/PostCard";
+// import Header from "../components/layout/Header";
+// import Footer from "../components/layout/Footer";
+
+// const Home: React.FC = () => {
+//   return (
+//     <div className="flex flex-col min-h-screen">
+//       <Header />
+
+//       <main className="flex-1 flex flex-col items-center justify-center space-y-6">
+//         <h1 className="text-5xl font-bold">Welcome Page</h1>
+//         <PostCard />
+//         <Button />
+//       </main>
+
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Home;
+import Header from "@/components/layout/Header";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col h-screen">
       <Header />
-
-      <main className="flex-1 flex flex-col items-center justify-center space-y-6">
-        <h1 className="text-5xl font-bold">Welcome Page</h1>
-        <PostCard />
-        <Button />
+      <main className="flex-grow flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+        <div className="text-center">
+          <h1 className="text-5xl font-bold text-white">
+            Welcome to our Application!
+          </h1>
+          <p className="mt-4 text-xl text-white">
+            We're glad you're here. Explore and enjoy your experience.
+          </p>
+          <button className="mt-6 px-6 py-3 bg-white text-blue-500 rounded-full font-semibold hover:bg-gray-200 transition">
+            Get Started
+          </button>
+        </div>
       </main>
-
-      <Footer />
     </div>
   );
 };
