@@ -40,7 +40,6 @@ const Home: React.FC = () => {
           </button>
         </div>
       </main>
-      <PostCard />
     </div>
   );
 };
