@@ -21,6 +21,7 @@
 
 // export default Home;
 import Header from "@/components/layout/Header";
+import PostCard from "@/components/common/PostCard"; // ✅ import your component
 
 const Home: React.FC = () => {
   return (
@@ -39,6 +40,7 @@ const Home: React.FC = () => {
           </button>
         </div>
       </main>
+      <PostCard />
     </div>
   );
 };
