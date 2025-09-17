@@ -33,6 +33,7 @@ export interface PostModalProps {
   onClose: () => void;
   onSubmit: (post: PostData) => void;
 }
+
 export interface UserProps {
   id: number;
   name: string;
@@ -42,4 +43,21 @@ export interface UserProps {
   phone: string;
   website: string;
   company: Company;
+}
+// ------------------- New Interfaces for Task 5 -------------------
+
+export interface UserData {
+  id?: number; // optional for new users
+  name: string;
+  username: string;
+  email: string;
+  phone: string;
+  website: string;
+  company: Company;
+  address: Address;
+}
+
+export interface UserModalProps {
+  onClose: () => void;
+  onSubmit: (user: UserData) => void;
 }
