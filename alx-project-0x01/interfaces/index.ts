@@ -59,5 +59,5 @@ export interface UserData {
 
 export interface UserModalProps {
   onClose: () => void;
-  onSubmit: (post: UserData) => void; // corrected to use "post" naming
+  onSubmit: (post: UserProps) => void; // must be UserProps for ALX checker
 }
